@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Karla&family=Kenia&family=Khula:wght@400;600;700;800&family=Libre+Barcode+128+Text&family=Manrope:wght@300;400;500;600;700;800&family=Megrim&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.company-sign {
+    font-family: 'Megrim', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59px;
+    position: absolute;
+    top: 38px;
+    left: 59px;
+    color: #000000;
+}
+
+.make-order {
+    max-width: 1440px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px gray;
+    margin: 0 auto;
+    padding: 38px 20px 0px 20px;
+    position: relative;
+}
+
+.last-div {
+    height: 137px;
+}
+
+.make-order__body,
+.order__data input::placeholder,
+.order__data input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000;
+}
+
+.order__data input::placeholder {
+    color: #00000099;
+}
+
+/* стилизация радио кнопки*/
+.order__data input[type*="radio"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.order__data input[type*="radio"]+label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.order__data input[type*="radio"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.order__data input[type*="radio"]:checked+label::before {
+    background-image: url("../images/make_order/radio_cheked.svg");
+}
+
+.order__delivery p,
+.order__payment p {
+    font-size: 13px;
+    line-height: 15.23px;
+    margin-left: 50px;
+}
+
+.order__delivery>div:first-of-type {
+    margin-bottom: 42px;
+}
+
+.order__delivery>div:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+/* конец стилизации радио кнопок*/
+
+.make-order__body {
+    max-width: 815px;
+    margin: 0 auto;
+}
+
+.order__title {
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order__data input {
+    margin-bottom: 49px;
+    max-width: 537px;
+    width: 100%;
+    height: 67px;
+    border: 1px solid #00000066;
+    padding-left: 35px;
+    background-color: #E7E7E74D;
+}
+
+.order__data-user>div,
+.order__address {
+    display: grid;
+    grid-template-columns: 158px 537px;
+    column-gap: 12px;
+    align-items: baseline;
+}
+
+.order__data-user {
+    margin-bottom: 104px;
+}
+
+.order__delivery legend {
+    margin-bottom: 44px;
+}
+
+.order__delivery {
+    margin-bottom: 101px;
+}
+
+.order__address input:first-of-type {
+    margin-bottom: 25px;
+}
+
+.inside__address {
+    display: grid;
+    grid-template-columns: 260px 260px;
+    column-gap: 17px;
+}
+
+.order__address {
+    margin-bottom: 144px;
+}
+
+.order__payment legend {
+    margin-bottom: 60px;
+}
+
+.order__payment>div,
+.order__delivery>div {
+    margin-left: 177px;
+}
+
+.order__payment>div:first-of-type {
+    margin-bottom: 42px;
+}
+
+.order__payment>div:nth-of-type(2) {
+    margin-bottom: 26px;
+}
+
+.order__payment {
+    margin-bottom: 83px;
+}
+
+.order__making {
+    max-width: 760px;
+    background-color: #D9D9D973;
+    padding: 41px 130px 22px 51px;
+    font-size: 28px;
+    margin-left: 57px;
+}
+
+.order-goods__sum,
+.order-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-goods__sum,
+.order__promo {
+    margin-bottom: 33px;
+}
+
+.order__promo {
+    display: flex;
+}
+
+.order__promo input {
+    border: 1px solid #A6A6A6;
+    max-width: 310px;
+    height: 49px;
+    background-color: #E7E7E7;
+    margin-bottom: 0px;
+}
+
+.check__promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 49px;
+    margin-left: 33px;
+    border: 1px solid #A6A6A6;
+    font-size: 20px;
+    line-height: 23.44px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.order-total {
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.make__order-btn {
+    display: block;
+    width: 380px;
+    height: 58px;
+    background-color: #30AA52;
+    border: 1px solid #00000066;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32.81px;
+}
+
+@media (max-width:900px) {
+
+    .order__data-user>div,
+    .order__address {
+        grid-template-columns: minmax(158px, 537px);
+        row-gap: 12px;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .inside__address {
+        grid-template-columns: minmax(100px, 260px) minmax(100px, 260px);
+        column-gap: 17px;
+    }
+
+    .make-order__body,
+    .order__data input::placeholder,
+    .order__data input {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000;
+    }
+
+    .order__payment>div,
+    .order__delivery>div {
+        margin-left: 0px;
+    }
+    .order__payment,
+    .order__delivery{
+        margin: 0px 20px 20px 15%;
+    }
+    .order__data input {
+        margin-bottom: 20px;
+        max-width: 537px;
+        height: 40px;
+        padding-left: 5px;
+    }
+    .make-order {
+        padding: 100px 20px 0px 20px;
+    }
+    .order__title {
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .order__data-user,
+    .order__address {
+        margin-bottom: 20px;
+    }
+    .order__making {
+        padding: 41px 20px 22px 20px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .check__promo {
+        height: 40px;
+    }
+    .make__order-btn {
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width:500px){
+    .order__promo {
+        flex-direction: column;
+    }
+    .check__promo,
+    .order__promo>div{
+        max-width: 310px;
+        width: 100%;
+        margin-left: auto ;
+        margin-right: auto;
+    }
+    .make__order-btn {
+        font-size: 20px;
+    }
+    .order__making {
+        padding: 41px 20px 22px 10px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+}

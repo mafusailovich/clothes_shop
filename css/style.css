@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Karla&family=Kenia&family=Khula:wght@400;600;700;800&family=Libre+Barcode+128+Text&family=Manrope:wght@300;400;500;600;700;800&family=Megrim&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.header-body {
+    padding-right: 70px;
+    position: relative;
+}
+
+.slide-item {
+    max-width: 1370px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-menu {
+    max-width: 39.8vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 380px;
+    bottom: 62px;
+    z-index: 5;
+}
+
+.slider-menu__passive,
+.slide-item {
+    display: none;
+}
+
+.slider-menu__active,
+.slide-item__active {
+    display: inline-block;
+}
+
+
+
+.main-sign {
+    position: absolute;
+    top: -8px;
+    left: 142px;
+}
+
+.main-sign h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 150px;
+    color: #fff;
+}
+
+
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.5vw;
+    font-weight: 600;
+    line-height: 211px;
+    color: #D8D8D899;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 67px;
+    right: 125px;
+}
+
+.left-menu {
+    position: absolute;
+    bottom: 62px;
+    left: 70px;
+
+}
+
+.left-menu__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 27px;
+    color: #000000B2;
+}
+
+.left-menu__item a {
+    color: inherit;
+}
+
+
+
+.main-photo {
+    max-width: 1046px;
+    margin: 0px 124px 103px 270px;
+}
+
+.main-photo__row {
+    display: grid;
+    grid-template-columns: minmax(250px, 517px) minmax(250px, 503px);
+    column-gap: 26px;
+}
+
+.main-text {
+    margin: 0px 216px 129px 247px;
+    max-width: 977px;
+    font-family: 'Khula', sans-serif;
+}
+
+.main-text p {
+    margin-bottom: 30px;
+}
+
+.main-text__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+}
+
+.main-text__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.main-text__text p:last-child {
+    margin-bottom: 0px;
+}
+
+.main-text__text a {
+    color: #00000054;
+}
+
+.subform>*:not(.subform__text) {
+    margin: 0px auto 31px auto;
+}
+
+.subform {
+    max-width: 1047px;
+    padding: 44px 0px 63px 0px;
+    margin: 0px 123px 126px 270px;
+    background-color: #CBCBCB33;
+}
+
+
+.subform__title {
+    max-width: 366px;
+}
+
+.subform__title p {
+    font-family: 'Khula', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    text-align: center;
+}
+
+.subform__subtitle {
+    max-width: 283px;
+}
+
+.subform__subtitle p {
+    font-family: 'Khula', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.87px;
+    text-align: center;
+}
+
+.subform__form {
+    max-width: 494px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subform__form input {
+    width: 200px;
+    height: 65px;
+    background-color: #F5F5F5;
+    border: 1px solid #0000004A;
+    padding-top: 5px;
+}
+
+.subform__form input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: center;
+}
+
+.subform__form button {
+    width: 200px;
+    height: 65px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.subform__form button:hover {
+    background-color: #2f2c2c;
+}
+
+.subform__text {
+    max-width: 297px;
+    margin: 0 auto;
+}
+
+.subform__text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 9.38px;
+    text-align: center;
+    color: #828282;
+}
+
+@media (min-width: 1440px) {
+    .header-title {
+        font-size: 180px;
+    }
+
+    .main-sign h1 {
+        font-size: 128px;
+    }
+
+    .slider-menu {
+        max-width: 573px;
+    }
+}
+
+@media (max-width:1120px) {
+    .slider-menu {
+        right: 190px;
+    }
+
+    .header-title {
+        top: 22px;
+        right: 38px;
+    }
+
+    .main-photo {
+        margin: 0px 124px 103px 42px;
+    }
+
+    .main-text,
+    .subform {
+        margin: 0px 83px 129px 83px;
+    }
+
+    .subform {
+        padding: 44px 10px 63px 10px;
+    }
+}
+
+
+@media (max-width:730px) {
+    .left-menu {
+        bottom: 4px;
+    }
+
+    .left-menu__item {
+        margin-bottom: 5px;
+    }
+
+    .main-sign {
+        top: 14px;
+        left: 111px;
+    }
+
+    .main-sign h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .main-photo {
+        margin: 0px 83px 103px 83px;
+    }
+
+    .main-photo__row {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 20px;
+    }
+
+    .subform__form {
+        justify-content: center;
+    }
+
+    .subform__form>* {
+        margin: 10px;
+    }
+}
+
+@media (max-width:520px) {
+    .left-menu {
+        left: 7px;
+    }
+
+    .left-menu__item {
+        font-size: 16px;
+    }
+
+    .main-sign {
+        left: 45px;
+    }
+
+    .slider-menu {
+        right: 85px;
+        bottom: 10px;
+    }
+
+    .header-title {
+        font-size: 9vw;
+        right: -5px;
+    }
+
+    .main-photo,
+    .main-text,
+    .subform {
+        margin: 0px 10px 30px 10px;
+    }
+
+    .subform__title p {
+        font-family: 'Khula', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .subform {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .left-menu {
+        max-width: 100px;
+    }
+
+    .left-menu__item {
+        line-height: 16px;
+    }
+
+    .main-text__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .subform {
+       margin: 0px 13px 129px 8px;
+    }
+    .subform__title p {
+        font-size: 20px;
+    }
+}

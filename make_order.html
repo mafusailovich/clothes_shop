@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/make_order.css">
+    <title>Making an order</title>
+</head>
+
+<body>
+    <div class="make-order">
+        <div class="make-order__body">
+            <div class="company-sign">VSite</div>
+            <div class="order__title">
+                <h1>Оформление заказа</h1>
+            </div>
+            <form action="#" class="order__data">
+                <fieldset class="order__data-user">
+                    <div>
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div>
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname" placeholder="Введите фамилию">
+                    </div>
+                    <div>
+                        <label for="tel">Телефон</label>
+                        <input type="tel" id="tel" placeholder="+7 900 999 99 99">
+                    </div>
+                    <div>
+                        <label for="city">Населеный пункт</label>
+                        <input type="text" id="city" placeholder="Москва">
+                    </div>
+                </fieldset>
+                <fieldset class="order__delivery">
+                    <legend>Способ доставки</legend>
+                    <div>
+                        <input type="radio" id="curier" name="method_delivery" checked>
+                        <label for="curier">Курьерская доставка</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="self" name="method_delivery">
+                        <label for="self">Самовывоз</label>
+                        <div>
+                            <p>Из магазина, сегодня в течении 4 часов, бесплатно</p>
+                            <p>Из пункта выдачи или постамата</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" id="post" name="method_delivery">
+                        <label for="post">Почтовая доставка</label>
+                    </div>
+                </fieldset>
+                <fieldset class="order__address">
+                    <div><label for="street">Адрес</label></div>
+                    <div>
+                        <div><input type="text" id="street" placeholder="Улица"></div>
+                        <div class="inside__address">
+                            <input type="text" id="building" placeholder="Дом">
+                            <input type="text" id="office" placeholder="Квартира/офис">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="order__payment">
+                    <legend>Способ оплаты</legend>
+                    <div>
+                        <input type="radio" name="payment" id="getting" checked>
+                        <label for="getting">При получении</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment" id="onsite">
+                        <label for="onsite">Онлайн на сайте</label>
+                        <p>-5% скидка на товары в корзине</p>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment" id="sbp">
+                        <label for="sbp">СБП</label>
+                        <p>-5% скидка на товары в корзине</p>
+                    </div>
+                </fieldset>
+
+                <fieldset class="order__making">
+                    <div class="order-goods__sum">
+                        <div class="order-goods__sum-text">Товары, 2 шт.</div>
+                        <div class="order-goods__sum-sum">40,898 R</div>
+                    </div>
+                    <div class="order__promo">
+                        <div><input type="text" placeholder="Промокод" id="promocode"></div>
+                        <div class="check__promo">Применить</div>
+                    </div>
+                    <div class="order-total">
+                        <div class="order-total__text">Итого</div>
+                        <div class="order-total__sum">40,898 R</div>
+                    </div>
+                    <button type="submit" class="make__order-btn">Оформить заказ</button>
+                </fieldset>
+            </form>
+            <div class="last-div"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
