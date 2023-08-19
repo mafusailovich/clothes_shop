@@ -3,8 +3,8 @@
 /* всплывающее меню корзины*/
 
 .cart-pop {
-    max-width: 700px;
-    max-height: 1373px;
+    width: 700px;
+    height: 1373px;
     position: absolute;
     top: 25px;
     right: 70px;
@@ -33,6 +33,10 @@
 }
 
 .full-cart {
+    display: none;
+}
+
+.full-cart--active {
     display: block;
 }
 
@@ -40,6 +44,10 @@
     display: none;
     background-color: #fff;
     padding: 17px 29px 0px 30px;
+}
+
+.empty-cart--active{
+    display: block;
 }
 
 .cart-title,
@@ -225,13 +233,17 @@ hr {
     .cart-item__photo {
         max-width: 150px;
     }
-}
 
-@media (max-width:730px){
-    .empty-cart {
-        max-width: 350px;
+    .cart-pop{
+        width: 350px;
     }
 
+    .buy-aws p {
+        display: none;
+    }
+}
+
+@media (max-width:760px){
     .cart-sign {
         writing-mode: horizontal-tb;
         transform: none;
@@ -245,15 +257,12 @@ hr {
     }
 }
 
-@media (max-width:540px) {
-    .buy-aws p {
-        display: none;
-    }
-}
-
 @media (max-width:400px) {
     .cart-pop {
         top:40px;
         right: 0px;
+    }
+    .cart-pop{
+        width: 300px;
     }
 }

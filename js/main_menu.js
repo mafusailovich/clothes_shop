@@ -11,7 +11,7 @@ const cartClose = document.querySelector('.cart-close');
 
 
 document.addEventListener('click', function (event) {
-    console.log(scrollY);
+
     //выезжающее меню
     if (event.target.closest('.burger-btn')){
         burgerMenu.classList.toggle('burger-menu__active');
@@ -21,7 +21,6 @@ document.addEventListener('click', function (event) {
     //всплывающая форма аутентификации
     if (event.target.closest('.right-menu__account')) {
         authForm.classList.toggle('auth-form__active');
-        authForm.scrollIntoView(top);
     } else {
         if (!event.target.closest('.auth-form__body')){
             authForm.classList.remove('auth-form__active');
@@ -53,6 +52,8 @@ document.addEventListener('click', function (event) {
     if (event.target.closest('.cart-close') || !event.target.closest('.cart-pop')) {
         cartPop.classList.remove('cart-pop__active');
     };
+
+
 });
 
 rmCart.addEventListener(`mouseover`, () => {

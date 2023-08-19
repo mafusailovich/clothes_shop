@@ -18,6 +18,13 @@
     position: fixed;
 }
 
+.right-menu__account,
+.right-menu__cart,
+.right-menu__like,
+.right-menu__search {
+    cursor: pointer;
+}
+
 @media (max-width:520px) {
     .right-menu {
         height: 170px;

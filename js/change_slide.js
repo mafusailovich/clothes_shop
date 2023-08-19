@@ -4,7 +4,6 @@ const slideItems = document.querySelectorAll('.slide-item');
 const sliderMenu = document.querySelector('.slider-menu');
 const sliderMenuItems = document.querySelectorAll(`[class*="slider-menu__item"]`);
 
-console.log(sliderMenuItems);
 
 //определение активного слайда
 function searchActiveSlide() {
@@ -28,7 +27,6 @@ function searchActiveBtn() {
 function syncSlideMenu() {
     let numSlide = searchActiveSlide() + 1; //значение слайда для меню (+1 потому что в меню есть ещё стрелки)
     let numActive = searchActiveBtn();//значение активного пункта меню
-    console.log(numActive);
     if (numSlide !== numActive) {
         //если номера отличаются, то по пункту меню выставляем слайд
         slideItems[numSlide - 1].classList.remove('slide-item__active');
